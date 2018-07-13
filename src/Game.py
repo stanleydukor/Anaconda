@@ -1,5 +1,7 @@
 import pygame 
 
+from src.Settings import Settings
+
 class Game:
     def loop(self):
         clock = pygame.time.Clock()
@@ -7,9 +9,7 @@ class Game:
         while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                    crashed = True
-
-                print(event)
+                    exit()
 
         pygame.display.update()
-        clock.tick(60)
+        clock.tick(Settings.game.fps)

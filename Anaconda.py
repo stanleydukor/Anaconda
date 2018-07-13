@@ -1,9 +1,10 @@
 import pygame
 
 from src.Game import Game
+from src.Settings import Settings
 
 def main():
-    gameDisplay = pygame.display.set_mode((8000,600))
+    display = pygame.display.set_mode((Settings['game']['width'], Settings['game']['width']))
     pygame.display.set_caption('Anaconda')
 
     game = Game()
