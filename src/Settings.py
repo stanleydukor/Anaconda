@@ -1,9 +1,10 @@
 Settings = {
     'game': {
         'caption': 'Anaconda',
-        'display_height': 800,
-        'display_width': 600,
-        'fps': 60,
+        'height': 500,
+        'width': 500,
+        'fps': 45,
+        'bumper_size': 25
     },
     'snake': {
         'height': 10,
@@ -17,7 +18,7 @@ Settings = {
     'colors': {
         'white': (255, 255, 255),
         'black': (0, 0, 0),
-        'green': (0,0,255),
+        'green': (0, 100, 0),
         'red': (255, 0, 0)
     }
 }
