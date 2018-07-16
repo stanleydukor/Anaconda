@@ -8,7 +8,6 @@ class Snake:
         self.y_pos = (Config['game']['height'] - 30) / 2
         self.display = display
         self.body = []
-        self.body_rects = []
         self.max_size = 0
 
     def eat(self):
